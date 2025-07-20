@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect } from "react";
-import { CgMouse } from "react-icons/all";
+// import { CgMouse } from "react-icons/all";
 import "./Home.css";
 import ProductCard from "./ProductCard.js";
 import MetaData from "../layout/MetaData";
@@ -7,6 +7,7 @@ import { clearErrors, getProduct } from "../../actions/productAction";
 import { useSelector, useDispatch } from "react-redux";
 import Loader from "../layout/Loader/Loader";
 import { useAlert } from "react-alert";
+import { FaArrowDown } from "react-icons/fa";
 
 const Home = () => {
   const alert = useAlert();
@@ -35,7 +36,8 @@ const Home = () => {
 
             <a href="#container">
               <button>
-                Scroll <CgMouse />
+                Scroll 
+                <FaArrowDown />
               </button>
             </a>
           </div>
